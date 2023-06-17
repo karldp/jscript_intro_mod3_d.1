@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/45b5ef9290.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Big Daddy</title>
+</head>
+
+<body>
+    <section class="card">
+        <div class="card-image" title="big_daddy">
+            <img src="./assets/imgs/big_daddy.png" alt="picture of big_daddy">
+        </div>
+        <h1>Big Daddy</h1>
+        <input type="number" placeholder="Insert Quantity" id="quantitySelector" min="1">
+
+        <input type="text" placeholder="Insert Color" id="colorSelector">
+        <span id="price">Price: $27.500</span>
+
+        <div class="total_button">
+            <button id="getTotal">Calculate Total</button>
+            <i id="trashCan" class="fa-solid fa-trash"></i>
+        </div>
+
+        <section id="results">
+            <p>Total: $<span id="totalPrice">0</span></p>
+            <p>Qty: <span id="quantity">0</span></p>
+            <p>Color:</p>
+            <div id="colorUser" class="circle"></div>
+        </section>
+    </section>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

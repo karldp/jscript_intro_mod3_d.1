@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+
+body {
+    background-image: url(../imgs/bioshock_bigdaddy_blur1.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background-image: linear-gradient(to right, #1d373d, #050a0c, #050a0c, #1d373d);
+    border-radius: 1.5rem;
+    box-shadow: 0.5rem 0.5rem 1rem rgb(118, 236, 236), -0.5rem 0.5rem 1rem rgb(118, 236, 236), 0.5rem -0.5rem 1rem rgb(118, 236, 236), -0.5rem -0.5rem 1rem rgb(118, 236, 236);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1.2rem;
+    height: 90%;
+    width: 18rem;
+}
+
+.card-image {
+    background-size: cover;
+    background-position: center;
+    width: 200px;
+    transition: all 1s ease-in-out;
+}
+
+.card-image:hover{
+    transform: scale(1.07);
+    filter: brightness(1.5);
+}
+
+.card-image img {
+    max-width: 100%;
+    /* aspect-ratio: 1/1; */        /* check this after with other browsers */
+    height: auto;
+    object-fit: cover;
+    filter: drop-shadow(1rem -0.5rem 0.7rem);
+}
+
+h1 {
+    color: white;
+    font-family: 'Poiret One', cursive;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.card input {
+    background-color: rgb(0, 0, 0);
+    max-width: 190px;
+    height: 4px;
+    padding: 10px;
+    border: 2px solid rgb(187, 241, 241);
+    border-radius: 5px;
+    margin: 0.5rem 0;
+    color: white;
+}
+
+.card input:focus {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border-color: aquamarine;
+    box-shadow: -1px -1px 13px aqua;
+    transition-property: box-shadow;
+    transition: 0.08s;
+}
+
+span {
+    color: azure;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.total_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1.9rem;
+
+}
+
+.card button {
+    background-image: linear-gradient(#172d2e, #42b1b9, #172d2e);
+    border-radius: 24px;
+    font-size: 0.8rem;
+    font-weight:bolder;
+    letter-spacing: 0.13rem;
+    cursor: pointer;
+    margin: 0.5rem 0.1rem 0.5rem 0;
+    padding: 10px 15px;
+    color: rgb(185, 247, 255);
+    border: 2px solid rgb(1, 48, 48);
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+.card button:hover {
+    transform: scale(1.03);
+    filter: drop-shadow(1px 1px 0.6rem aqua);
+    color: #182d31;
+    border: 2px solid rgb(2, 163, 163);
+}
+
+.card #trashCan {
+    color: azure;
+    width: 2rem;
+    height: 1rem;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+    
+}
+
+.card #trashCan:hover {
+    color: rgb(112, 224, 252);
+    -webkit-animation-name: shake;
+    -webkit-animation-duration: 500ms;
+    -webkit-animation-timing-function: ease-in;
+}
+
+#price {
+    margin: 0.7rem;
+    font-family: 'Poiret One', cursive;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+#results {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 1.1rem;
+    font-family: 'Poiret One', cursive;
+    text-transform: lowercase;
+}
+
+.circle {
+    display: flex;
+    width: 0.7rem;
+    height: 0.7rem;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid white;
+    border-radius: 100%;
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70% {
+        transform: translateX(-3px);
+    }
+
+    20%,
+    40%,
+    60% {
+        transform: translateX(3px);
+    }
+
+    80% {
+        transform: translateX(2px);
+    }
+
+    90% {
+        transform: translateX(-2px);
+    }
+}
